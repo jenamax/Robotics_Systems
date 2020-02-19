@@ -29,20 +29,51 @@
 		
 		\item After that we construct $K_\theta$ matrix base on arbitrarily chosen values of stiffness properties of links and active joints
 		
-		\item Then build deflection map for the robot by measurement end-effector displacement in some set of points x, y (z chose as constant since end-effector move on one plane):
+		\item Then build deflection map for the robot by measurement end-effector displacement in some set of points x, y (z chose as constant since end-effector move on one plane). X and Y were taken in range from 0.1 to 1 with step 0.01:
 		\begin{enumerate}
-			\item For each point compute inverse kinematics assuming that virtual joints positions are 0 (since they are small)
+			\item For each point compute inverse kinematics of each leg assuming that virtual joints positions are 0 (since they are small)
 			
-			\item Compute Jacobians by virtual joints positions $J_\theta$ and passive joints $J_q$
+			\item Compute Jacobians by virtual joints positions $J_\theta$ and passive joints $J_q$ for each leg
 			
-			\item Compute stiffness matrix $K_C$
+			\item Compute stiffness matrix $K$ for each leg
+			
+			\item Compute stiffness matrix $K_C$ of whole robot by taking sum of stiffness of all three legs
 			
 			\item Compute end-effector displacement: $\Delta t = K_C^{-1}W$
 			
 		\end{enumerate} 
-		\item Deflection map plots: 
+		\item Deflection map on x axis plot when force applied on x (dependent on x, y position of end-effector): 
 		
+		\begin{figure}[H]
+			\includegraphics[scale=0.5]{x1.png}
+		\end{figure}
+		\begin{figure}[H]
+			\includegraphics[scale=0.5]{x2.png}
+		\end{figure}
+		\begin{figure}[H]
+			\includegraphics[scale=0.5]{x3.png}
+		\end{figure}
+		
+		\item Deflection map by y axis plot when force applied on y (dependent on x, y position of end-effector): 
+		
+		\begin{figure}[H]
+			\includegraphics[scale=0.5]{y1.png}
+		\end{figure}
+		\begin{figure}[H]
+			\includegraphics[scale=0.5]{y2.png}
+		\end{figure}
+	
+		\item Deflection map by z axis plot when force applied on z (dependent on x, y position of end-effector): 
+		
+		\begin{figure}[H]
+			\includegraphics[scale=0.5]{z1.png}
+		\end{figure}
+		\begin{figure}[H]
+			\includegraphics[scale=0.5]{z2.png}
+		\end{figure}
+	
 	\end{itemize}
 
 	\section{Github link:} 
+	https://github.com/jenamax/Robotics_Systems/tree/master/Homework1
 \end{document}
