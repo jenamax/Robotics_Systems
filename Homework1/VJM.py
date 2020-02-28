@@ -41,10 +41,7 @@ k3 = np.matrix([[E_1*S_1/L_1, 0, 0, 0, 0, 0], \
 [0, 0, -6*E_1*Iy_1/L_1**2, 0, 4*E_1*Iy_1/L_1, 0], \
 [0, 6*E_1*Iy_1/L_1**2, 0, 0, 0, 4*E_1*Iz_1/L_1]])
 
-Kt = inv(block([[k0, zeros([1, 6]), zeros([1, 6]), zeros([1, 6])], \
-                [zeros([6, 1]), k1, zeros([6, 6]), zeros([6, 6])], \
-                [zeros([6, 1]), zeros([6, 6]), k2, zeros([6, 6])],\
-                [zeros([6, 1]), zeros([6, 6]), zeros([6, 6]), k3]]))
+Kt = inv(block([[k0, zeros([1, 6]), zeros([1, 6]), zeros([1, 6])], [zeros([6, 1]), k1, zeros([6, 6]), zeros([6, 6])], [zeros([6, 1]), zeros([6, 6]), k2, zeros([6, 6])], [zeros([6, 1]), zeros([6, 6]), zeros([6, 6]), k3]])) * 10**16
 
 
 def ik(x, y, z):
@@ -367,7 +364,7 @@ def J_theta3(q1, q2, q3, q4):
     return J
 
 def Kc(J_theta, J_q):
-    return inv(np.block([[zeros((6, 6)), J_theta, J_q], [np.transpose(J_theta), Kt, zeros([19, 3])], [np.transpose(J_q), zeros([3, 22])]]))[0:6, 0:6]*10**15
+    return inv(np.block([[zeros((6, 6)), J_theta, J_q], [np.transpose(J_theta), Kt, zeros([19, 3])], [np.transpose(J_q), zeros([3, 22])]]))[0:6, 0:6]
 
 def J_q1(q1, q2, q3, q4):
     J2 = Tb * Tz(q1) * Tz(th1) * T6d(th2) * Rz(q2) * dRz() * Tx(L_1) * T6d(th3) * Rz(q3) * Tx(L_2) * T6d(th4) * Rz(q4)
@@ -489,6 +486,7 @@ for x in X:
 
         W = np.transpose(np.matrix([100, 0, 0, 0, 0, 0]))
         dt = inv(K) * W
+        #print(dt[0, 0])
         dx_fx.append(dt[0, 0])
         dy_fx.append(dt[1, 0])
         dz_fx.append(dt[2, 0])

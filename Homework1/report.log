@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.13)  19 FEB 2020 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.13)  19 FEB 2020 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,63 +146,73 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
+<scheme.jpg, id=1, 4015.0pt x 3011.25pt>
+File: scheme.jpg Graphic file (type jpg)
+<use scheme.jpg>
+Package pdftex.def Info: scheme.jpg  used on input line 14.
+(pdftex.def)             Requested size: 401.52353pt x 301.14264pt.
 
-Overfull \hbox (0.15993pt too wide) in paragraph at lines 36--37
+Overfull \hbox (11.52353pt too wide) in paragraph at lines 14--15
+[][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 19.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./scheme.jpg>]
+Overfull \hbox (0.15993pt too wide) in paragraph at lines 40--41
 []\OT1/cmr/m/n/12 Compute Ja-co-bians by vir-tual joints po-si-tions $\OML/cmm/
 m/it/12 J[]$ \OT1/cmr/m/n/12 and pas-sive joints
  []
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<x1.png, id=15, 462.528pt x 346.896pt>
+<x1.png, id=13, 462.528pt x 346.896pt>
 File: x1.png Graphic file (type png)
 <use x1.png>
-Package pdftex.def Info: x1.png  used on input line 48.
+Package pdftex.def Info: x1.png  used on input line 52.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<x2.png, id=17, 462.528pt x 346.896pt>
+<x2.png, id=15, 462.528pt x 346.896pt>
 File: x2.png Graphic file (type png)
 <use x2.png>
-Package pdftex.def Info: x2.png  used on input line 51.
+Package pdftex.def Info: x2.png  used on input line 55.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<x3.png, id=18, 462.528pt x 346.896pt>
+[2]
+<x3.png, id=22, 462.528pt x 346.896pt>
 File: x3.png Graphic file (type png)
 <use x3.png>
-Package pdftex.def Info: x3.png  used on input line 54.
+Package pdftex.def Info: x3.png  used on input line 58.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [2 <./x1.png> <./x2.png>]
-<y1.png, id=24, 462.528pt x 346.896pt>
+ [3 <./x1.png> <./x2.png>]
+<y1.png, id=28, 462.528pt x 346.896pt>
 File: y1.png Graphic file (type png)
 <use y1.png>
-Package pdftex.def Info: y1.png  used on input line 60.
+Package pdftex.def Info: y1.png  used on input line 64.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<y2.png, id=25, 462.528pt x 346.896pt>
+<y2.png, id=29, 462.528pt x 346.896pt>
 File: y2.png Graphic file (type png)
 <use y2.png>
-Package pdftex.def Info: y2.png  used on input line 63.
+Package pdftex.def Info: y2.png  used on input line 67.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [3 <./x3.png> <./y1.png>]
-<z1.png, id=31, 462.528pt x 346.896pt>
+ [4 <./x3.png> <./y1.png>]
+<z1.png, id=35, 462.528pt x 346.896pt>
 File: z1.png Graphic file (type png)
 <use z1.png>
-Package pdftex.def Info: z1.png  used on input line 69.
+Package pdftex.def Info: z1.png  used on input line 73.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<z2.png, id=32, 462.528pt x 346.896pt>
+<z2.png, id=36, 462.528pt x 346.896pt>
 File: z2.png Graphic file (type png)
 <use z2.png>
-Package pdftex.def Info: z2.png  used on input line 72.
+Package pdftex.def Info: z2.png  used on input line 76.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [4 <./y2.png> <./z1.png>]
+ [5 <./y2.png> <./z1.png>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.78 	https://github.com/jenamax/Robotics_
+l.82 	https://github.com/jenamax/Robotics_
                                           Systems/tree/master/Homework1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -210,20 +220,20 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.79 \end{document}
+l.83 \end{document}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[5 <./z2.png>] (./report.aux) ) 
+[6 <./z2.png>] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 1547 strings out of 492982
- 21924 string characters out of 6134896
- 80770 words of memory out of 5000000
- 5109 multiletter control sequences out of 15000+600000
+ 1553 strings out of 492982
+ 21997 string characters out of 6134896
+ 79770 words of memory out of 5000000
+ 5113 multiletter control sequences out of 15000+600000
  7588 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,273b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,25p,273b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
@@ -233,10 +243,10 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on report.pdf (5 pages, 347860 bytes).
+Output written on report.pdf (6 pages, 690324 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
